@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top {
+  height: 50px;
+  background-color: #ff9a4b;
+}
+
+.center {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  flex-basis: 300px;
+  background-color: #eeeeee;
+  position: relative;
+  padding: 10px;
+}
+
+.step {
+  background-color: #ff9a4b;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box:nth-child(1), .box:nth-child(2) {
+  margin-right: 30px;
+}
+
+.image1 {
+  background-image: url(1-taskimg/flow01.png);
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  margin: 0 0 15px 0;
+}
+
+.image2 {
+  background-image: url(1-taskimg/flow02.png);
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  margin: 0 0 15px 0;
+}
+
+.image3 {
+  background-image: url(1-taskimg/flow03.png);
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  margin: 0 0 15px 0;
+}
+
+.fontt {
+  margin: 0 0 5px 0;
+}
+
+.bottom {
+  height: 50px;
+  background-color: #aaaaaa;
+}
+
+@media screen and (max-width: 768px) {
+  .center {
+    width: 100%;
+    display: block;
+  }
+  
+  .box {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .box:nth-child(1), .box:nth-child(2) {
+  margin: 0 auto 20px;
+  }
+  
+}
